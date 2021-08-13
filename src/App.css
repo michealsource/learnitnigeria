@@ -1,38 +1,381 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+* {
+  box-sizing: border-box;
+  margin:0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+ul li{
+  cursor: pointer;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+p {
+  margin: 0.75rem 0;
+}
+
+.lead {
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+}
+
+.text-center {
+  text-align:center;
+}
+
+.py-1 { padding: 1.5rem 0; }
+.py-2 { padding: 2rem 0; }
+.py-3 { padding: 3rem 0; }
+
+.p-1 { padding: 1.5rem; }
+.p-2 { padding: 2rem; }
+.p-3 { padding: 3rem; }
+
+/* Utility Classes */
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 0 2rem;
+  overflow: hidden;
+}
+
+
+#navbar {
+    display: flex;
+    position: sticky;
+    top:0;
+    background: #333;
+    color: #fff;
+    justify-content: space-between;
+    z-index: 1;
+    padding: 1rem;
   }
+  
+  #navbar ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+  }
+  
+  #navbar ul li a {
+    color: #fff;
+    padding: 0.75rem;
+    margin: 0 0.25rem;
+  }
+  
+  #navbar ul li a:hover {
+    background: #ff9933;
+    border-radius: 5px;
+  }
+
+  .logo{
+    width: 200px;
+    height: 50px;
+  }
+
+ /* Showcase */
+#showcase {
+  background: #333 url('./img/showcase4.jpg') no-repeat center center/cover;
+  height: 100vh;
+  color: #fff;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+#showcase .showcase-content {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  text-align: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  height: 100%;
+  padding: 0 2rem;
+  /* Overlay */
+  position: absolute;
+  top: 65px;
+  left:0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.8);
 }
 
-.App-link {
-  color: #61dafb;
+/* button styling */
+.btn {
+  display: inline-block;
+  color: #fff;
+  background: #ff9933;
+  
+  padding: 0.5rem 2rem;
+  border: none;
+  border-radius: 5px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.btn:hover {
+  background: #009966;
+}
+
+.btn-dark {
+  background: #333;
+  color: #fff;
+}
+
+
+/* OUR TECHNOLOGIES */
+
+.technologies{
+  width: 100px;
+  height: 100px;
+ padding-bottom: 20px;
+}
+
+.bg-what{
+  background-color: #e6e6e6;
+}
+
+.what .items {
+  display: flex;
+  padding: 1rem;
+}
+
+.what .items .item {
+  flex: 1;
+  text-align: center;
+  padding: 1rem;
+}
+
+.what .items .item i {
+  background: #93cb52;
+  padding: 1rem;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+.mobile-development, .backend{
+  background-color: #009966;
+  color: #fff;
+}
+
+.front-end{
+  background-color: #ffffff;
+}
+
+
+/* ABOUT US SECTION */
+.about{
+  line-height: 25px;
+  font-size: 20px;
+}
+
+/* OUR GOALS */
+
+h4{
+  color: #484848;
+}
+
+.goals{
+  width: 100px;
+  height: 100px;
+}
+/* Contact Section */
+#contact {
+  display: flex;
+  margin-top: 40px;
+}
+
+#css_custom{
+  background-color: #ffffff;
+  color: #484848;
+}
+
+#contact .map, #contact .contact-form {
+  flex: 1;
+}
+
+#contact .contact-form .form-group {
+  margin: 0.75rem;
+}
+
+#contact .contact-form label {
+  display: block;
+}
+
+#contact .contact-form input,
+#contact .contact-form textarea {
+  width: 100%;
+  padding: 0.5rem;
+}
+
+.form-select{
+  width: 500px;
+  height: 50px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  font-size: 20px;
+  color: #8a8988;
+  cursor: pointer;
+}
+
+.bg-primary {
+  background: #00a651;
+  color: #fff;
+}
+
+.m-heading{
+  margin-left: 15px;
+}
+
+.form-control{
+  outline: none;
+  border: none;
+  height: 50px;
+  border-radius: 5px;
+  font-size: 20px;
+}
+
+.btn-dark{
+  background-color: #fcb040;
+  color: #ffffff;
+  border-radius: 5px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.map{
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+}
+
+.social{
+  margin-right: 25px;
+  font-size: 50px;
+  -webkit-transition: all 600ms;
+  -moz-transition: all 600ms;
+  transition: all 600ms;
+  background-color: #757574;
+  padding: 10px;
+  color: #e6e6e6;
+}
+
+.instagram:hover{
+  background-color: #A20068;
+  color: #fff;
+  border-radius: 25%;
+  padding: 10px;
+}
+
+.facebook:hover{
+  background-color: #395498;
+  color: #fff;
+  border-radius: 25%;
+  padding: 10px;
+}
+
+.twitter:hover{
+  background-color: #2BA5DA;
+  color: #fff;
+  border-radius: 25%;
+  padding: 10px;
+}
+
+.email{
+  font-size: 20px;
+  margin-left: 30px;
+  margin-top: 20px;
+  padding-left: 20px;
+}
+
+
+
+/* FOOTER */
+.bg-dark {
+  background: #333;
+  color: #fff;
+  margin-top: 20px;
+}
+
+
+
+  /* PHONE SCREEN SIZE */
+  /* Smartphones */
+@media(max-width: 500px) {
+  #navbar {
+    flex-direction: column;
+    align-items: center;
   }
-  to {
-    transform: rotate(360deg);
+
+  #navbar .logo {
+    margin-bottom: 0.5rem;
+    text-align: center;
+  }
+
+  #navbar ul {
+    padding: 0.5rem;
+  }
+
+  .form-control{
+    outline: none;
+    border: none;
+    height: 30px;
+    border-radius: 5px;
+    font-size: 15px;
+  }
+
+  .m-heading{
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+  }
+
+  .logo{
+    width: 200px;
+    height: 30px;
+  }
+
+  .what .items {
+    display: block;
+    padding: 1rem;
+  }
+  #contact{
+    display: block;
+  }
+}
+
+/* ========WHATSAPP ICON STYLES====== */
+/* for desktop */
+.whatsapp_float {
+  position: fixed;
+  width: 80px;
+  height: 80px;
+  bottom: 40px;
+  right: 40px;
+  background-color: #25d366;
+  color: #FFF;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 2px 2px 3px #999;
+  z-index: 100;
+}
+
+.whatsapp-icon {
+  margin-top: -5px;
+}
+
+/* for mobile */
+@media screen and (max-width: 767px) {
+  .whatsapp-icon {
+    margin-top: -5px;
+  }
+
+  .whatsapp_float {
+      width: 40px;
+      height: 40px;
+      bottom: 20px;
+      right: 10px;
+      font-size: 22px;
   }
 }

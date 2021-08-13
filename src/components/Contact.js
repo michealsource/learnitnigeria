@@ -52,12 +52,12 @@ function Contact() {
   ]
 
   const [options, setOptions]= useState(Technologies);
-  const[firstname, setFirstname]=useState('');
-  const[lastname, setLastname]=useState('');
-  const[email, setEmail]=useState('');
-  const[phone, setPhone]=useState('');
-  const[message, setMessage]=useState('');
-  const[selected,setSelected]=useState([])
+  // const[firstname, setFirstname]=useState('');
+  // const[lastname, setLastname]=useState('');
+  // const[email, setEmail]=useState('');
+  // const[phone, setPhone]=useState('');
+  // const[message, setMessage]=useState('');
+  // const[selected,setSelected]=useState([])
 
 
     return (

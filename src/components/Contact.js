@@ -2,107 +2,136 @@ import React, { useState } from 'react'
 import Multiselect from 'multiselect-react-dropdown';
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome"
 import {faFacebook, faInstagram,faTwitter} from "@fortawesome/free-brands-svg-icons"
+import axios from "axios"
+import { ShowMessage, type } from "./Toastr/ShowMessage";
+import Select from 'react-select';
+import Loader from "react-loader-spinner";
 
 
 function Contact() {
   const Technologies =[
     {
-      name:"HTML 5",
-      id:1
+      value:"HTML",
+      label:"HTML",
     },{
-      name:"CSS",
-      id:2
+      value:"CSS",
+      label:"CSS",
     },{
-      name:"Javascript",
-      id:3
+      value:"Javascript",
+      label:"Javascript"
     },{
-      name:"Typescript",
-      id:4
+      value:"Bootstrap",
+      label:"Bootstrap",
     },{
-      name:"Bootstrap",
-      id:5
+      value:"React Native",
+      label:"React Native",
+    },
+    {
+      value:"React JS",
+      label:"React JS",
     },{
-      name:"React Native",
-      id:6
+      value:"Mongo DB",
+      label:"Mongo DB",
     },{
-      name:"Flutter",
-      id:7
+      value:"Node js",
+      label:"Node js",
     },{
-      name:"Mongo DB",
-      id:8
+      value:"PHP",
+      label:"PHP",
     },{
-      name:"MYSQL",
-      id:9
+      value:"Wordpress",
+      label:"Wordpress",
     },{
-      name:"Firebase",
-      id:10
-    },{
-      name:"Node js",
-      id:11
-    },{
-      name:"PHP",
-      id:12
-    },{
-      name:"Wordpress",
-      id:13
-    },{
-      name:"Python",
-      id:14
+      value:"Intro to Python",
+      label:"Intro to Python",
     }
   ]
 
   const [options, setOptions]= useState(Technologies);
-  // const[firstname, setFirstname]=useState('');
-  // const[lastname, setLastname]=useState('');
-  // const[email, setEmail]=useState('');
-  // const[phone, setPhone]=useState('');
-  // const[message, setMessage]=useState('');
-  // const[selected,setSelected]=useState([])
+  const[firstname, setFirstname]=useState('');
+  const[lastname, setLastname]=useState('');
+  const[email, setEmail]=useState('');
+  const[phone, setPhone]=useState('');
+  const[selected,setSelected]=useState([])
+  const [isProcessing, setIsProcessing] = useState(false)
 
+
+
+  const payload = {
+    firstName: firstname, 
+    lastName: lastname,
+    email,
+    phone,
+    listOfTech:selected
+  }
+
+  const handleRest = () => {
+    setFirstname('')
+    setLastname('')
+    setEmail('')
+    setPhone('')
+  }
+
+  
+  const handleSubmit = async(e) => {
+    e.preventDefault()
+    if(firstname === "" || lastname === "" || email === "" || phone === "" || !selected.length){
+      ShowMessage(type. ERROR, "All fields are required.")
+      return;
+    }
+    setIsProcessing(true)
+    await axios.post('/register', payload ).then((res) => {
+      handleRest()
+      setIsProcessing(false)
+      ShowMessage(type. DONE, res.data)
+    }).catch((err) => {
+      setIsProcessing(false)
+      ShowMessage(type. ERROR, err)
+    })
+  }
+
+
+  const handleChange = (options) => {
+    setSelected(options.map(val => val.value));
+  };
 
     return (
     <section id="contact" className="container">
-      
     <div className="contact-form bg-primary p-2">
       <h2 className="m-heading">Enroll so we can get your request</h2>
      
-      <form>
+      <form onSubmit={(e) => handleSubmit(e)}>
         <div className="form-group">
           <label for="name">First Name</label>
-          <input className="form-control" type="text" id="name" placeholder="FirstName"/>
+          <input value={firstname} className="form-control" onChange={(e) => setFirstname(e.target.value)} type="text" id="name" placeholder="FirstName"/>
         </div>
 
         <div className="form-group">
           <label for="name">Last Name</label>
-          <input className="form-control" type="text" id="name" placeholder="LastName"/>
+          <input value={lastname} className="form-control" onChange={(e) => setLastname(e.target.value)} type="text" id="name" placeholder="LastName"/>
         </div>
         <div className="form-group">
           <label for="email">Email</label>
-          <input className="form-control" type="email" id="email" placeholder="Enter Email"/>
+          <input value={email} className="form-control" onChange={(e) => setEmail(e.target.value)} type="email" id="email" placeholder="Enter Email"/>
         </div>
 
         <div className="form-group">
           <label for="phone">Phone Number</label>
-          <input className="form-control" type="text" id="phone" placeholder="Enter Phone Number"/>
+          <input value={phone} className="form-control" onChange={(e) => setPhone(e.target.value)} type="text" id="phone" placeholder="Enter Phone Number"/>
         </div>
 
-        <div className="form-group">
-          <label for="phone">Select lists of Technologies to Enroll</label>
-          <Multiselect
-           options={options}
-           displayValue={"name"}
-           id="css_custom"
-            />
-        </div>
-
-        <div className="form-group">
-          <label for="message">Message</label>
-          <textarea name="message" id="message" placeholder="Enter Message"></textarea>
+        <div style={{color: "#000"}} className="form-group" >
+          <label style={{color: "#fff"}} for="phone">Select lists of Technologies to Enroll</label>
+        <Select
+          isMulti = {true}
+          options={options}
+          closeMenuOnSelect={false}
+          onChange={handleChange}/>
+          
         </div>
         <div className="form-group">
-             <input type="submit" value="Send" className="btn form-control btn-dark"/>
+             <button type="submit" className="btn form-control btn-dark">{isProcessing ? <Loader type="Circles" color="#00BFFF" height={35} width={35}/> : "Send"}</button>
         </div>
-      
       </form>
     </div>
     <div className="map">

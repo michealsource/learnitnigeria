@@ -6,10 +6,10 @@ function Showcase() {
   <header id="showcase">
     <div className="showcase-content">
       <h1 className="l-heading">
-       Welcome to LearniTNigeria
+       Welcome to LearnItNigeria
       </h1>
       <p className="lead">
-        Information Technology Digital Classess theat will Make you  job Ready Person
+      Hub of Information Technology
       </p>
       <Link to="contact" smooth={true} duration={2000} class="btn">Enroll</Link>
     </div>

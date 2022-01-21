@@ -1,0 +1,12 @@
+.info-box img {
+    width: 90px;
+}
+
+.first{
+    border-radius: 10px;
+}
+
+.info-box {
+    align-items: center;
+    display: flex;
+}

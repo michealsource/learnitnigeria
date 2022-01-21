@@ -1,0 +1,14 @@
+.our-experties h2{
+    padding-top: 20px;
+    font-size: 40px;
+}
+.our-experties{
+    max-width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.experties-inner-row{
+    display: flex;
+    margin-top: 40px;
+}

@@ -1,0 +1,39 @@
+.boot{
+    display: inline-block;
+    width: 100% !important;
+    border-radius: 5px;
+}
+
+.service {
+    padding: 10px;
+    background-color: #fff;
+    box-shadow: var(--shadow);
+}
+
+.skills-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.skills-container div{
+    background-color: #35a66c;
+    margin: 10px;
+    border-radius: 8px;
+    padding: 10px;
+    color: #fff;
+}
+
+.img-single img{
+    width: 100px;
+    height: 50px;
+}
+
+.img-single{
+    display: flex;
+    margin-top: 40px;
+    flex-wrap: wrap;
+}
+
+.bootcamp-section{
+    margin-top: -100px;
+}

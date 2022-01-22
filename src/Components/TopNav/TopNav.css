@@ -5,11 +5,11 @@
     --border: rgba(0,0,0,0.08);
     --shadow: 0px 6px 30px rgba(0, 0, 0, 0.08);
 }
-
+/* 
 .top-nav span,
 .top-nav i {
     vertical-align: middle;
-}
+} */
 
 .navbar {
     box-shadow: var(--shadow);

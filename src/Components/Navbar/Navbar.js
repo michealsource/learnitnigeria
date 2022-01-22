@@ -12,6 +12,12 @@ import RegistrationModal from '../RegistrationModal/RegistrationModal'
 import ContactModal from '../ContactModal/ContactModal'
 import Project from '../Project/Project'
 function Navbar() {
+    const handleCollapse = () => {
+        var nav = document.getElementById("navbarNav");
+        var btn = document.getElementById("navbarBtn");
+        nav.classList.remove("show");
+        btn.classList.add("collapsed");
+      };
     return (
         <>
             <TopNav />
@@ -29,26 +35,26 @@ function Navbar() {
                             </li>
                            
                             <li className="nav-item">
-                                <Link className="nav-link" to="/services">Services</Link>
+                                <Link onClick={handleCollapse} className="nav-link" to="/services">Services</Link>
                             </li>
 
                             <li className="nav-item">
-                                <Link className="nav-link" to="/project">Projects</Link>
+                                <Link onClick={handleCollapse} className="nav-link" to="/project">Projects</Link>
                             </li>
 
                             <li className="nav-item">
-                                <Link className="nav-link" to="/technology">Our Technolgogy</Link>
+                                <Link onClick={handleCollapse} className="nav-link" to="/technology">Our Technolgogy</Link>
                             </li>
                             <li className="nav-item">
-                                <Link className="nav-link" to="/blog">Blog</Link>
+                                <Link onClick={handleCollapse} className="nav-link" to="/blog">Blog</Link>
                             </li>
                            
                             <li className="nav-item">
-                                <Link className="nav-link" to="/about">About</Link>
+                                <Link onClick={handleCollapse} className="nav-link" to="/about">About</Link>
                             </li>
 
                             <li className="nav-item">
-                                <Link data-bs-toggle="modal" data-bs-target="#exampleModal2" className="nav-link" to="/about">Contact</Link>
+                                <Link onClick={handleCollapse} data-bs-toggle="modal" data-bs-target="#exampleModal2" className="nav-link" to="/about">Contact</Link>
                             </li>
                             
                         </ul>

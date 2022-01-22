@@ -11,7 +11,6 @@ function TopNav() {
                     <p> <FaPhoneAlt/> (+234) 7041033504/7058420122</p>
                 </div>
                 <div className="col-auto social-icons">
-
                     <a href="#"><FaFacebook className='bx'/></a>
                     <a href="#"><FaTwitterSquare className='bx'/></a>
                     <a href="#"><FaInstagram className='bx'/></a>

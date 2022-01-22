@@ -19,7 +19,11 @@
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
-  
+    <script>
+      $("#navbarSupportedContent a:not(.dropdown-toggle)").click(function() {
+        $("#navbarSupportedContent").collapse("hide");
+      });
+    </script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
   </body>
 </html>

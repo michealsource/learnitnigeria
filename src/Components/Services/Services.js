@@ -61,8 +61,7 @@ function Services() {
                             <div class="service">
                                 <img src={smartphone} alt="" />
                                 <h5>Mobile Application Development</h5>
-                                <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of
-                                    classical Latin literature from</p>
+                                <p>Expand and develop your company via incentive applications that increase distribution and foster engagement. Break away from the competition and forge ahead on your digital transformation journey by utilizing mobile technology and expertise</p>
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-6">

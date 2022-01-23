@@ -53,13 +53,13 @@ function Navbar() {
                                 <Link onClick={handleCollapse} className="nav-link" to="/about">About</Link>
                             </li>
 
-                            <li className="nav-item">
+                            {/* <li className="nav-item">
                                 <Link onClick={handleCollapse} data-bs-toggle="modal" data-bs-target="#exampleModal2" className="nav-link" to="/about">Contact</Link>
-                            </li>
+                            </li> */}
                             
                         </ul>
                        
-                        <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal" className="btn nav-link btn-brand ms-lg-3">Enroll Now</a>
+                        {/* <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal" className="btn nav-link btn-brand ms-lg-3">Enroll Now</a> */}
                     </div>
                 </div>
             </nav>

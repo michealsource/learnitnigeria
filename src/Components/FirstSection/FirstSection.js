@@ -13,7 +13,7 @@ useEffect(()=>{
 },[])
     return (
         <>
-            <section>
+            <section id="about">
                 <div class="container">
                     <div class="row justify-content-center">
                         <h2  className='text-center mb-5' >OUR TECHNOLOGY STANDARD</h2>

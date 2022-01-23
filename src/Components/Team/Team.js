@@ -23,7 +23,7 @@ function Team() {
                             data-aos-duration="2000" class="col-lg-4 col-md-8">
                             <div class="team-member">
                                 <div class="image">
-                                    <img src={team1} alt="" />
+                                    {/* <img src={team1} alt="" /> */}
                                     <div class="social-icons">
                                         <a href="#"><FaFacebook className='bx' /></a>
                                         <a href="#"><FaTwitterSquare className='bx' /></a>

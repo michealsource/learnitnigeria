@@ -11,7 +11,7 @@ function Home() {
             <FirstSection/>
             <SecondSection/>
             <Bootcamp/>
-            <Team/>
+            {/* <Team/> */}
         </>
     )
 }

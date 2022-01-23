@@ -8,7 +8,7 @@ function TopNav() {
             <div className="row justify-content-between align-items-center">
                 <div className="col-auto d-flex mobile-top-nav">
                     <p className='email'> <FaEnvelope /> info@learnitnigeria.com</p>
-                    <p> <FaPhoneAlt/> (+234) 7041033504/7058420122</p>
+                    <p className='email'> <FaPhoneAlt/> (+234) 7041033504/7058420122</p>
                 </div>
                 <div className="col-auto social-icons">
                     <a href="#"><FaFacebook className='bx'/></a>

@@ -2,6 +2,9 @@
     width: 90px;
 }
 
+#about{
+    overflow: hidden;
+}
 .first{
     border-radius: 10px;
 }

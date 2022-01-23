@@ -2,6 +2,9 @@
     text-align: center;
 }
 
+#team{
+    overflow: hidden;
+}
 .team-member .image{
     position: relative;
     z-index: 2;

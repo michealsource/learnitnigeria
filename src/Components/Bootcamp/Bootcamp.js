@@ -34,7 +34,7 @@ import jira from '../../four/jira.png'
 function Bootcamp() {
     return (
         <>
-            <section className="text-center bootcamp-section">
+            <section id="services"  className="text-center bootcamp-section">
                 <div className="container">
                     <h1>The Bootcamp Experience</h1>
                     <p>learnitnigeria is more than a Web Development bootcamp: it's a career transformation experience. Beyond learning the essential technical skills you'll need to start a new career as a Web Developer, you'll gain hands-on, industry experience through unique real-world projects where you'll work alongside industry professionals on real business problems and collaborate with designers, data scientists, and digital marketers to deliver a real-world solution. </p>

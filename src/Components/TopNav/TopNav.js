@@ -6,7 +6,7 @@ function TopNav() {
         <div className="top-nav" id="home">
         <div className="container">
             <div className="row justify-content-between align-items-center">
-                <div className="col-auto d-flex">
+                <div className="col-auto d-flex mobile-top-nav">
                     <p className='email'> <FaEnvelope /> info@learnitnigeria.com</p>
                     <p> <FaPhoneAlt/> (+234) 7041033504/7058420122</p>
                 </div>

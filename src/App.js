@@ -13,6 +13,14 @@ function App() {
    <>
    <Navbar/>
    <Footer />
+   <a
+        href="https://wa.me/2347032238595"
+        className="whatsapp_float"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <i className="fa fa-whatsapp whatsapp-icon"></i>
+      </a>
    </>
   );
 }

@@ -27,8 +27,8 @@ function Services() {
                     </div>
                     <div class="row g-4">
                         <div class="col-lg-4 col-md-6" data-aos="flip-left"
-     data-aos-easing="ease-out-cubic"
-     data-aos-duration="2000">
+                            data-aos-easing="ease-out-cubic"
+                            data-aos-duration="2000">
                             <div class="service">
                                 <img src={web} alt="" />
                                 <h5>Website Design</h5>
@@ -36,9 +36,9 @@ function Services() {
                             </div>
                         </div>
 
-                        <div class="col-lg-4 col-md-6"  data-aos="flip-left"
-     data-aos-easing="ease-out-cubic"
-     data-aos-duration="2000">
+                        <div class="col-lg-4 col-md-6" data-aos="flip-left"
+                            data-aos-easing="ease-out-cubic"
+                            data-aos-duration="2000">
                             <div class="service">
                                 <img src={webdevelopment} alt="" />
                                 <h5>Web Development</h5>
@@ -46,19 +46,18 @@ function Services() {
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-6" data-aos="flip-left"
-     data-aos-easing="ease-out-cubic"
-     data-aos-duration="2000">
+                            data-aos-easing="ease-out-cubic"
+                            data-aos-duration="2000">
                             <div class="service">
                                 <img src={socialMedia} alt="" />
                                 <h5>Digital Marketing</h5>
-                                <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of
-                                    classical Latin literature from</p>
+                                <p>Businesses need to drive relevant, qualified traffic to their website, phone lines, or physical location. As your digital marketing and advertising agency, we help you choose the best places and media to help you grow your business and raise awareness.</p>
                             </div>
                         </div>
 
                         <div class="col-lg-4 col-md-6" data-aos="flip-left"
-     data-aos-easing="ease-out-cubic"
-     data-aos-duration="2000">
+                            data-aos-easing="ease-out-cubic"
+                            data-aos-duration="2000">
                             <div class="service">
                                 <img src={smartphone} alt="" />
                                 <h5>Mobile Application Development</h5>
@@ -70,43 +69,56 @@ function Services() {
                             <div class="service">
                                 <img src={onlinelearning} alt="" />
                                 <h5>Software Development Training</h5>
-                                <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of
-                                    classical Latin literature from</p>
+                                <p>Gain a deep understanding of how to build, deploy, secure and scale everything
+                                    from web apps to mobile apps using React, Node js, JavaScript and more.
+                                    Stay up to speed on the ever-changing landscape of emerging software
+                                    development tools and techniques.
+                                </p>
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-6" data-aos="flip-left"
-     data-aos-easing="ease-out-cubic"
-     data-aos-duration="2000">
+                            data-aos-easing="ease-out-cubic"
+                            data-aos-duration="2000">
                             <div class="service">
                                 <img src={telecommunication} alt="" />
                                 <h5>ICT Symposiums</h5>
-                                <p>We offer rich custom web development for every kind of web application.</p>
+                                <p>we focuse on developing the international
+                                    and national initiatives and experience on ICT in education, spreading information,
+                                    making advices for academic and administrative staff in education, and supporting
+                                    the initiatives on those issues.</p>
                             </div>
                         </div>
 
                         <div class="col-lg-4 col-md-6" data-aos="flip-left"
-     data-aos-easing="ease-out-cubic"
-     data-aos-duration="2000">
+                            data-aos-easing="ease-out-cubic"
+                            data-aos-duration="2000">
                             <div class="service">
                                 <img src={cybersecurity} alt="" />
                                 <h5>System Integration</h5>
-                                <p>We offer rich custom web development for every kind of web application.</p>
+                                <p> In very broad terms, we connect different sub-systems (components)
+                                    into a single larger system that functions as one. With regards to software solutions,
+                                    we link together various IT systems,
+                                    services and/or software to enable all
+                                    of them to work functionally together.</p>
                             </div>
                         </div>
 
                         <div class="col-lg-4 col-md-6" data-aos="flip-left"
-     data-aos-easing="ease-out-cubic"
-     data-aos-duration="2000">
+                            data-aos-easing="ease-out-cubic"
+                            data-aos-duration="2000">
                             <div class="service">
                                 <img src={hosting} alt="" />
                                 <h5>Networking</h5>
-                                <p>We offer rich custom web development for every kind of web application.</p>
+                                <p>We analyze the communication process among various computing
+                                    devices or computer systems that are linked, or networked, together to exchange
+                                    information and share resources, because computer networks are the backbone of modern-day communication
+                                </p>
                             </div>
                         </div>
 
                         <div class="col-lg-4 col-md-6" data-aos="flip-left"
-     data-aos-easing="ease-out-cubic"
-     data-aos-duration="2000">
+                            data-aos-easing="ease-out-cubic"
+                            data-aos-duration="2000">
                             <div class="service">
                                 <img src={rocket} alt="" />
                                 <h5>MVP Development</h5>

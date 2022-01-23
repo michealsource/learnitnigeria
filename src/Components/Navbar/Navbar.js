@@ -43,7 +43,7 @@ function Navbar() {
                             </li>
 
                             <li className="nav-item">
-                                <Link onClick={handleCollapse} className="nav-link" to="/technology">Our Technolgogy</Link>
+                                <Link onClick={handleCollapse} className="nav-link" to="/technology">Our Technolgies</Link>
                             </li>
                             <li className="nav-item">
                                 <Link onClick={handleCollapse} className="nav-link" to="/blog">Blog</Link>

@@ -43,3 +43,18 @@
 .email{
     padding-right: 20px;
 }
+
+@media(max-width: 500px){
+    .mobile-top-nav{
+        display: flex !important;
+        flex-direction: column !important;
+    }
+    .top-nav {
+        background-color: var(--brand);
+        color: #fff;
+        padding-top: 5px;
+        padding-bottom: 5px;
+ 
+        width: 100%;
+    }
+}

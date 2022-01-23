@@ -33,7 +33,7 @@ function Industry() {
                 <div class="col-lg-4 col-md-6">
                     <div class="service">
                         <img src={hospitalbuilding} alt=""/>
-                        <h5>Medtech Developmentt</h5>
+                        <h5>Medtech Development</h5>
                         <h6>CUSTOM MEDTECH SOFTWARE FOR MODERN HOSPITALS</h6>
                         <p>Build a medtech application that will revolutionize healthcare services by using big data and personalization.</p>
                     </div>

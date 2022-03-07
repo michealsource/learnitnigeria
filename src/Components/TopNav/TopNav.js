@@ -11,11 +11,11 @@ function TopNav() {
                     <p className='email'> <FaPhoneAlt/> (+234) 7041033504/7058420122</p>
                 </div>
                 <div className="col-auto social-icons">
-                    <a href="#"><FaFacebook className='bx'/></a>
-                    <a href="#"><FaTwitterSquare className='bx'/></a>
-                    <a href="#"><FaInstagram className='bx'/></a>
-                    <a href="#"><FaLinkedin className='bx'/></a>
-                    <a href="#"><FaWhatsapp className='bx'/></a>
+                    <a href="https://web.facebook.com/Learnitnigeria-240128987907708/"><FaFacebook className='bx'/></a>
+                    <a href="https://twitter.com/learnitnigeria"><FaTwitterSquare className='bx'/></a>
+                    <a href="https://www.instagram.com/learnitnigeria/"><FaInstagram className='bx'/></a>
+                    <a href="https://www.linkedin.com/in/learnitnigeria-learnitnigeria-198978231/"><FaLinkedin className='bx'/></a>
+                    <a href="https://wa.me/2347032238595"><FaWhatsapp className='bx'/></a>
                 </div>
             </div>
         </div>

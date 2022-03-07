@@ -13,11 +13,11 @@ function Footer() {
                                 <h2 class="navbar-brand">LearnitNigeria</h2>
                                 <p>You can get in touch with us via our social media handle below</p>
                                 <div class="col-auto social-icons">
-                                    <Link to="/"><FaFacebook className='bx' /></Link>
-                                    <Link to="/"><FaTwitterSquare className='bx' /></Link>
-                                    <Link to="/"><FaInstagram className='bx' /></Link>
-                                    <Link to="/"><FaLinkedin className='bx' /></Link>
-                                    <Link to="/"><FaWhatsapp className='bx' /></Link>
+                                    <a href="https://web.facebook.com/Learnitnigeria-240128987907708/"><FaFacebook className='bx' /></a>
+                                    <a href="https://twitter.com/learnitnigeria"><FaTwitterSquare className='bx' /></a>
+                                    <a href="https://www.instagram.com/learnitnigeria/"><FaInstagram className='bx' /></a>
+                                    <a href="https://www.linkedin.com/in/learnitnigeria-learnitnigeria-198978231/"><FaLinkedin className='bx' /></a>
+                                    <a href="https://wa.me/2347032238595"><FaWhatsapp className='bx' /></a>
                                 </div>
                             </div>
                         </div>
